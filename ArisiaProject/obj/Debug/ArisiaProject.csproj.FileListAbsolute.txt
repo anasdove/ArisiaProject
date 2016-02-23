@@ -16,6 +16,5 @@ D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\System.Web.Razor.xml
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\System.Web.WebPages.xml
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\System.Web.WebPages.Deployment.xml
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\System.Web.WebPages.Razor.xml
-D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\obj\Debug\ArisiaProject.csprojResolveAssemblyReference.cache
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\obj\Debug\ArisiaProject.dll
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\obj\Debug\ArisiaProject.pdb
