@@ -18,3 +18,4 @@ D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\System.Web.WebPages.De
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\System.Web.WebPages.Razor.xml
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\obj\Debug\ArisiaProject.dll
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\obj\Debug\ArisiaProject.pdb
+D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\ArisiaProject.dll.config
