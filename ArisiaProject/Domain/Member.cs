@@ -2,11 +2,9 @@
 
 namespace ArisiaProject.Domain
 {
-    public class Member
+    public class Member : Entity<Guid>
     {
         #region Properties
-
-        public virtual Guid Id { get; set; }
 
         public virtual string Name { get; set; }
 

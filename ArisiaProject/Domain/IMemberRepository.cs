@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ArisiaProject.Domain
 {
-    public interface IMemberRepository : IRepository<Member>
+    public interface IMemberRepository : IRepository<Member, Guid>
     {
-        ICollection<Member> GetByGrade(string grade);
+        IEnumerable<Member> GetByGrade(string grade);
     }
 }

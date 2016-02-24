@@ -1,27 +1,25 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ArisiaProject.Domain
 {
-    public interface IRepository<T>
+    public interface IRepository
     {
-        void Add(T item);
+        
+    }
 
-        void Add(ICollection<T> items);
+    public interface IRepository<TEntity, TPrimaryKey> : IRepository
+        where TEntity : Entity<TPrimaryKey>
+    {
+        void Insert(TEntity item);
 
-        void Update(T item);
+        void Update(TEntity item);
 
-        void Update(ICollection<T> items);
+        void Delete(TPrimaryKey itemId);
 
-        void Remove(T item);
+        TEntity GetById(TPrimaryKey itemId);
 
-        void Remove(ICollection<T> items);
-
-        T GetById(Guid itemId);
-
-        T GetByName(string name);
-
-        ICollection<T> GetAll();
+        IQueryable<TEntity> GetAll();
     }
 }
