@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using ArisiaProject.Domain;
-using NHibernate.Expression;
+using NHibernate.Criterion;
 
 namespace ArisiaProject.Repositories
 {
@@ -97,7 +97,7 @@ namespace ArisiaProject.Repositories
             {
                 var createCriteria = session.CreateCriteria(typeof (Member));
 
-                createCriteria.Add(Expression.Eq("ID", itemId));
+                createCriteria.Add(Restrictions.Eq("ID", itemId));
 
                 var results = createCriteria.List<Member>();
 
@@ -111,7 +111,7 @@ namespace ArisiaProject.Repositories
             {
                 var createCriteria = session.CreateCriteria(typeof(Member));
 
-                createCriteria.Add(Expression.Eq("Name", name));
+                createCriteria.Add(Restrictions.Eq("Name", name));
 
                 var results = createCriteria.List<Member>();
 
@@ -135,7 +135,7 @@ namespace ArisiaProject.Repositories
             {
                 var createCriteria = session.CreateCriteria(typeof(Member));
 
-                createCriteria.Add(Expression.Eq("Grade", grade));
+                createCriteria.Add(Restrictions.Eq("Grade", grade));
 
                 return createCriteria.List<Member>();
             }

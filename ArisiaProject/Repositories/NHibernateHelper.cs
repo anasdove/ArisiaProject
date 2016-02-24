@@ -1,4 +1,6 @@
-﻿using ArisiaProject.Domain;
+﻿using System.IO;
+using System.Web;
+using ArisiaProject.Domain;
 using NHibernate;
 using NHibernate.Cfg;
 
@@ -24,9 +26,9 @@ namespace ArisiaProject.Repositories
                 }
 
                 var config = new Configuration();
-                config.Configure();
 
-                config.AddAssembly(typeof (Member).Assembly);
+                config.Configure(HttpContext.Current.Server.MapPath(@"Models\Configuration\hibernate.cfg.xml"));
+                config.AddDirectory(new DirectoryInfo(HttpContext.Current.Server.MapPath(@"Mappings")));
 
                 _sessionFactory = config.BuildSessionFactory();
 
