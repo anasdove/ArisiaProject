@@ -23,3 +23,4 @@ D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\Iesi.Collections.dll
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\NHibernate.dll
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\Iesi.Collections.xml
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\NHibernate.xml
+D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\obj\Debug\ArisiaProject.csprojResolveAssemblyReference.cache
