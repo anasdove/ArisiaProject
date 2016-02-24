@@ -19,7 +19,6 @@ D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\System.Web.WebPages.Ra
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\obj\Debug\ArisiaProject.dll
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\obj\Debug\ArisiaProject.pdb
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\Models\Configuration\hibernate.cfg.xml
-D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\obj\Debug\ArisiaProject.csprojResolveAssemblyReference.cache
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\Iesi.Collections.dll
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\NHibernate.dll
 D:\Tutorial\ArisiaProject\ArisiaProject\ArisiaProject\bin\Iesi.Collections.xml

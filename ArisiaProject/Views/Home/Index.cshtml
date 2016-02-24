@@ -1,4 +1,6 @@
-﻿@{
+﻿@model ArisiaProject.Domain.Member
+
+@{
     Layout = null;
 }
 
@@ -7,11 +9,76 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Arisia Website</title>
+    <title>Index</title>
 </head>
 <body>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>Member</legend>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Name)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.BirthOfDate)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.BirthOfDate)
+                @Html.ValidationMessageFor(model => model.BirthOfDate)
+            </div>
+    
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Grade)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Grade)
+                @Html.ValidationMessageFor(model => model.Grade)
+            </div>
+            
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Address.PostCode)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Address.PostCode)
+                @Html.ValidationMessageFor(model => model.Address.PostCode)
+            </div>
+            
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Address.State)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Address.State)
+                @Html.ValidationMessageFor(model => model.Address.State)
+            </div>
+            
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Address.StreetAddress)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Address.StreetAddress)
+                @Html.ValidationMessageFor(model => model.Address.StreetAddress)
+            </div>
+
+            <p>
+                <input type="submit" value="Create" />
+            </p>
+        </fieldset>
+    }
+    
     <div>
-        This is arisia project.
+        @Html.ActionLink("Back to List", "Index")
     </div>
 </body>
 </html>

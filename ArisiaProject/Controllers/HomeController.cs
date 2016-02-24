@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Web.Mvc;
 using ArisiaProject.Domain;
 using ArisiaProject.Repositories;
@@ -17,9 +18,16 @@ namespace ArisiaProject.Controllers
 
         public ActionResult Index()
         {
-            memberRepository.Add(AddMember());
+            //memberRepository.Add(AddMember());
 
-            return View();
+            return View(new Member());
+        }
+
+        [AcceptVerbs(HttpVerbs.Post)]
+        public ActionResult Index(Member member)
+        {
+            memberRepository.Add(member);
+            return View(member);
         }
 
         #endregion
